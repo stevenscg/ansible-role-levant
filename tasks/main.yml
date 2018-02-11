@@ -1,0 +1,11 @@
+---
+#
+# Ansible tasks for the levant role
+#
+
+- name: Download levant
+  get_url:
+    url: "{{ levant_download }}"
+    dest: "{{ levant_home }}/levant"
+    mode: "a+x"
+  register: levant_was_downloaded
