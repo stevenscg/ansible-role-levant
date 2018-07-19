@@ -5,7 +5,7 @@
 # @see http://docs.ansible.com/playbooks_roles.html#roles
 #
 
-levant_version: 0.0.4
+levant_version: 0.2.1
 
 levant_archive:  "linux-amd64-levant"
 levant_download: "https://github.com/jrasell/levant/releases/download/{{ levant_version }}/{{ levant_archive }}"
