@@ -5,7 +5,8 @@
 
 - name: Download levant
   get_url:
-    url: "{{ levant_download }}"
-    dest: "{{ levant_home }}/levant"
-    mode: "a+x"
+    url:      "{{ levant_download }}"
+    dest:     "{{ levant_home }}/levant"
+    mode:     "a+x"
+    checksum: "{{ levant_checksum }}"
   register: levant_was_downloaded
